@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>yahoo.gif</ImageUrl>
+    <NavigateUrl>http://mail.yahoo.com</NavigateUrl>
+    <AlternateText>Yahoo Mail</AlternateText>
+    <Impressions>100</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>vstudio.gif</ImageUrl>
+    <NavigateUrl>http://www.microsoft.com/vstudio</NavigateUrl>
+    <AlternateText>Visual Studio.Net</AlternateText>
+    <Impressions>50</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>mslogo.gif</ImageUrl>
+    <NavigateUrl>http://www.microsoft.com</NavigateUrl>
+    <AlternateText>Microsoft</AlternateText>
+    <Impressions>50</Impressions>
+  </Ad>
+</Advertisements>
