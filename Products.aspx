@@ -13,7 +13,7 @@
 <body>
     <form id="form1" runat="server">
         <h2>List of Products</h2>
-        [<a href="addproduct.aspx">Add New Product</a>]
+        [<a href="addproduct2.aspx">Add New Product</a>]
         <p />
         <asp:GridView ID="GridView1" runat="server"
             AutoGenerateColumns="False"
