@@ -6,8 +6,8 @@
 
     protected void FormView1_ItemInserting(object sender, FormViewInsertEventArgs e)
     {
-        //SqlDataSource1.InsertParameters["@catcode"].DefaultValue =
-        //     e.Values["catcode"].ToString();
+        DropDownList ddl = FormView1.Row.FindControl("ddlCategory") as DropDownList;
+        SqlDataSource1.InsertParameters["CatCode"].DefaultValue =  ddl.SelectedValue;
     }
 </script>
 
@@ -72,7 +72,8 @@
                 &nbsp;
                 <asp:Button ID="InsertCancelButton" runat="server" 
                     CausesValidation="False" 
-                    CommandName="Cancel" Text="Cancel" />
+                    CommandName="Cancel"
+                    Text="Cancel" />
             </InsertItemTemplate>
         </asp:FormView>
 

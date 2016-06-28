@@ -24,7 +24,7 @@
                 <asp:BoundField DataField="Qoh" HeaderText="Qoh" SortExpression="Qoh" />
                 <asp:BoundField DataField="Remarks" HeaderText="Remarks" SortExpression="Remarks" />
                 <asp:BoundField DataField="CatCode" HeaderText="CatCode" SortExpression="CatCode" />
-                <asp:TemplateField >
+                <asp:TemplateField>
                     <ItemTemplate>
                         <asp:Button ID="Button1" 
                              runat="server" 
