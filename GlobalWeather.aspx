@@ -1,7 +1,6 @@
-﻿<%@ Page Language="C#" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" Title="Global Weather" %>
 <%@ Import Namespace="System.Xml" %>
 
-<!DOCTYPE html>
 
 <script runat="server">
 
@@ -17,19 +16,11 @@
         lblMsg.Text = node.InnerText;
     }
 </script>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content ID="c1" ContentPlaceHolderID="cpContent" runat="server">
+     <h2>Global Weather</h2>
         City Name : <asp:TextBox ID="txtCity" runat="server"></asp:TextBox>
         <p />
         <asp:Button ID="btnGet" runat="server" Text="Get Temp." OnClick="btnGet_Click" />
         <p />
         <asp:Label ID="lblMsg" runat="server" Text=""></asp:Label>
-
-    </form>
-</body>
-</html>
+</asp:Content>

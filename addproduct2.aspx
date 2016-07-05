@@ -1,6 +1,5 @@
-﻿<%@ Page Language="C#" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" Title="Add New Product"%>
 
-<!DOCTYPE html>
 
 <script runat="server">
 
@@ -11,13 +10,9 @@
     }
 </script>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+<asp:Content ID="Content1" ContentPlaceHolderID="cpContent" Runat="Server">
+        <h2>Add New Product</h2>
+         <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
             ConnectionString="<%$ ConnectionStrings:localdb %>" 
             InsertCommand="INSERT INTO [Products] ([ProdName], [Price], [Qoh], [Remarks], [CatCode]) VALUES (@ProdName, @Price, @Qoh, @Remarks, @CatCode)" 
             SelectCommand="SELECT * FROM [Products]">
@@ -44,7 +39,7 @@
             DataSourceID="SqlDataSource1" OnItemInserting="FormView1_ItemInserting">
         
             <InsertItemTemplate>
-                <h2>Add New Product</h2>
+                
                 Prod Name <br />
                 <asp:TextBox ID="ProdNameTextBox" runat="server" Text='<%# Bind("ProdName") %>' />
                 <p />
@@ -80,6 +75,4 @@
           <asp:SqlDataSource ID="sdsCategories" runat="server" ConnectionString="<%$ ConnectionStrings:localdb %>" SelectCommand="SELECT * FROM [Categories]">
 
                 </asp:SqlDataSource>
-    </form>
-</body>
-</html>
+ </asp:Content>

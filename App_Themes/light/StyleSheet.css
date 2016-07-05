@@ -1,0 +1,23 @@
+﻿body
+{
+    font-family:Verdana;
+    font-size:12pt;
+
+}
+
+.banner {
+    font-family :Arial;
+    font-size:30pt;
+    font-weight:bold;
+    color:white;
+    background-color : red;
+}
+
+.menu {
+    padding-top:5pt;
+    padding-bottom:5pt;
+    font-family : verdana;
+    font-weight:bold;
+    background-color : #eeeeee;
+    margin-bottom:5pt;
+}
