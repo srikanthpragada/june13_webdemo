@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        var xhr;
+        function create() {
+            xhr = new XMLHttpRequest();
+        }
+
+        function checkusername() {
+            var uname = document.getElementById("uname");
+            url = "validateuser.aspx?uname=" + uname.value;
+            xhr.open("GET", url, true); // async
+            xhr.onreadystatechange = handleResponse;  // registering callback function
+            xhr.send(null); // make request
+        }
+
+        function handleResponse() {
+            // alert( xhr.readyState);
+            if (xhr.readyState == 4)  // response completed
+                if (xhr.status == 200) {  // ok
+                    var message = document.getElementById("message");
+                    message.innerHTML = xhr.responseText;
+                }
+                else
+                    alert("Error ->" + xhr.statusText);
+        } 
+
+    </script>
+</head>
+<body onload="create()">
+    <h2>Registration</h2>
+    <form id="registerform" action="register.aspx">
+     Username :
+     <br/>
+     <input type="text" id="uname" size="20" onblur="checkusername()" />
+     <span id="message"></span>
+     <p/>
+     <input type="submit" value="Register" />
+    </form>
+    <p>
+        <img src="cat3.gif" /></p>
+</body>
+</html>
