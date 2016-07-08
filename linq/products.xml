@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<products>
+  <product>
+    <name>iPhone6</name>
+    <price>38000</price>
+  </product>
+  <product>
+    <name>iPad Air 2</name>
+    <price>48000</price>
+  </product>
+  <product>
+    <name>Google Nexus 6p</name>
+    <price>42000</price>
+  </product>
+  <product>
+    <name>Dell Laptop</name>
+    <price>55000</price>
+  </product>
+  <product>
+    <name>Segate External HD 1 TB</name>
+    <price>4000</price>
+  </product>
+  <product>
+    <name>Lenovo All in One Desktop</name>
+    <price>52000</price>
+    <qoh>0</qoh>
+  </product>
+  <product>
+    <name>Logitech Cordless mouse and keyboard</name>
+    <price>2000</price>
+    <qoh>0</qoh>
+  </product>
+</products>
