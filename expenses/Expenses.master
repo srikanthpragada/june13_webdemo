@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#"  %>
+
+<!DOCTYPE html>
+
+<script runat="server">
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Expeneses Manager</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="banner">Expenses Manager</div>
+    <div class="menu">
+        [<a href="list.aspx">Home</a>]
+        &nbsp;
+        [<a href="add.aspx">Add Expense</a>]
+        &nbsp;
+        [<a href="search.aspx">Search Expenses</a>]
+    </div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
